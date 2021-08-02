@@ -21,7 +21,7 @@ Somewhere in your project, you may need to use autoload
  In the src/config/Standard.php directory
  ```
  - In the Standard class there is a method called postLogin(), it is through it that you will implement your logic.
- - By default the postLogin method has an implemented logic which receives data from an array, to perform post validation
+ - By default the postLogin() method has an implemented logic which receives data from an array, to perform post validation
  ```php
  // the function must return a boolean value.
  public function postLogin() 
