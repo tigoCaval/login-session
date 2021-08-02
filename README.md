@@ -6,9 +6,9 @@ Creating session for login in PHP
 
 *If you found this project useful, consider making a donation to support the developer.*
 
-[![paypal](https://www.paypalobjects.com/pt_BR/i/btn/btn_donate_SM.gif)](https://www.paypal.com/donate?hosted_button_id=7GRD56DFDZWR4)
+[![paypal](https://www.paypalobjects.com/pt_BR/i/btn/btn_donate_SM.gif)](https://www.paypal.com/donate?hosted_button_id=6QVW2XQEATS3U)
 |
-[![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif)](https://www.paypal.com/donate?hosted_button_id=6QVW2XQEATS3U)
+[![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif)](https://www.paypal.com/donate?hosted_button_id=7GRD56DFDZWR4)
 
 ## Introduction
 Somewhere in your project, you may need to use autoload
