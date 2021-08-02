@@ -16,7 +16,41 @@ Somewhere in your project, you may need to use autoload
  include __DIR__ ."/vendor/autoload.php";
  ```
  ### Example
- 
+ - Configuration: 
+``` 
+ In the src/config/Standard.php directory
+ ```
+ - In the Standard class there is a method called postLogin(), it is through it that you will implement your logic.
+ - By default the postLogin method has an implemented logic which receives data from an array, to perform post validation
+ ```php
+ // the function must return a boolean value.
+ public function postLogin() 
+    {
+        $user = isset($_POST[self::USER]) ? $_POST[self::USER] : false;
+        $pw =   isset($_POST[self::PW]) ? md5($_POST[self::PW]) : false; 
+        $table = TestMatrix::table();
+        foreach ($table as $key => $item) {
+
+             if($user == $item->user && $pw == $item->password){
+                $_SESSION[self::SESSION] = $_POST[self::USER];
+                return true;
+             }
+        }
+        return false;
+    }
+ ```
+ Method TestMatrix::table()
+  ```php
+    public static function table() 
+    {
+        return [
+            1=> (object) ["user"=>"admin","password"=>md5("123")],
+            2=> (object) ["user"=>"admin2","password"=>md5("1234")],
+            3=> (object) ["user"=>"admin3","password"=>md5("12345")]
+        ];
+    }
+  ````
+  Example methods
   ```php
  use Tigo\LoginSession\Login; // import class
  $login = new Login();
