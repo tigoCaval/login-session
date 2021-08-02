@@ -1,6 +1,9 @@
 # Login Session
 Creating session for login in PHP
 
+- MIT license. ***Feel free to use this project***. ***Leave a star :star: !***
+- Download package: ```composer require tigo/login-session```
+
 ## Introduction
 Somewhere in your project, you may need to use autoload
  ```php
