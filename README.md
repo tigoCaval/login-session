@@ -38,3 +38,9 @@ Somewhere in your project, you may need to use autoload
     <td>Use this method to collect session information.</td>
   </tr> 
 </table>
+
+## Problems
+If you discover any issues, please contact my email or issue tracker and post the details.
+
+## License
+MIT license. See the archive [License](https://github.com/tigoCaval/login-session/blob/main/LICENSE)
