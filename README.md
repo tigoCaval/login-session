@@ -25,7 +25,7 @@ Somewhere in your project, you may need to use autoload
  ```php
  // the function must return a boolean value.
  public function postLogin() 
-    {
+ {
         $user = isset($_POST[self::USER]) ? $_POST[self::USER] : false;
         $pw =   isset($_POST[self::PW]) ? md5($_POST[self::PW]) : false; 
         $table = TestMatrix::table();
@@ -37,7 +37,7 @@ Somewhere in your project, you may need to use autoload
              }
         }
         return false;
-    }
+   }
  ```
  Method TestMatrix::table()
   ```php
@@ -81,6 +81,9 @@ Somewhere in your project, you may need to use autoload
 
 ## Problems
 If you discover any issues, please contact my email or issue tracker and post the details.
+
+## Contributors
+ - [List of contributors](https://github.com/tigoCaval/login-session/graphs/contributors)
 
 ## License
 MIT license. See the archive [License](https://github.com/tigoCaval/login-session/blob/main/LICENSE)
