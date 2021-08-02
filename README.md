@@ -11,6 +11,7 @@ Somewhere in your project, you may need to use autoload
   ```php
  use Tigo\LoginSession\Login; // import class
  $login = new Login();
+ $login->validate();
  ```
  <table style="width:100%">
   <tr>
